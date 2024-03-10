@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VKTestApplication</string>
+    <string name="product_content_description">Product image</string>
+    <string name="price">%1$d $</string>
+    <string name="description">Description</string>
+    <string name="error_occurred">Error occurred: %1$s :(</string>
+</resources>

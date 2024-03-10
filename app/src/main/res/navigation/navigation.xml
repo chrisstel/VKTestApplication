@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.vktestapplication.ui.fragments.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_out_left">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.vktestapplication.ui.fragments.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" >
+        <argument
+            android:name="product"
+            app:argType="com.example.vktestapplication.model.data.Product" />
+    </fragment>
+</navigation>
